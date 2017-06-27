@@ -54,6 +54,14 @@
 			$query = $this->db->get();
 			return $query->result();
 	  }
+	   public ffunction my_query()
+	   {
+	   	$query = $this->db->query("
+		SELECT t1.*, t2.id
+		FROM `database1`.`table1` AS t1, `database2`.`table2` AS t2
+		");
+		 return $query->result_array();
+	   }`
 	  
    }
    
